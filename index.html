@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design One Studio · Architects &amp; Designers · Manimajra, Chandigarh</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 fill=%22%23121212%22/%3E%3Crect x=%2218%22 y=%226%22 width=%228%22 height=%228%22 fill=%22%23EDC13B%22/%3E%3C/svg%3E">
+<meta name="description" content="Design One Studio, Manimajra, Chandigarh. Architecture, interiors, urban planning, landscape and Vastu consultancy led by Ar. Vijay Karan Singh.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600&family=Fragment+Mono&display=swap" rel="stylesheet">
+<style>
+:root{--bone:#F1EEE8;--conc:#DCD8D0;--conc2:#C9C4BA;--blk:#121212;--grey:#5E5B55;--yel:#EDC13B;--line:rgba(18,18,18,.16)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Schibsted Grotesk",system-ui,sans-serif;background:var(--bone);color:var(--blk);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.m{font-family:"Fragment Mono",ui-monospace,monospace;font-size:12.5px;letter-spacing:.02em}
+.g{display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;padding:0 40px}
+/* nav */
+header.top{position:fixed;inset:0 0 auto 0;z-index:40;color:#fff;transition:background .35s,color .35s}
+header.top.solid{background:rgba(241,238,232,.92);backdrop-filter:blur(12px);color:var(--blk);border-bottom:1px solid var(--line)}
+header.top .g{height:72px;align-items:center}
+.brand{grid-column:1/4;display:flex;align-items:center;gap:12px;font-weight:600;font-size:17px;letter-spacing:-.01em}
+.sq{width:14px;height:14px;background:var(--yel)}
+.tag{grid-column:5/8}
+.menu{grid-column:8/13;display:flex;justify-content:flex-end;gap:30px;align-items:center;font-size:15px}
+.menu a.u{position:relative}
+.menu a.u::after{content:"";position:absolute;left:0;right:0;bottom:-3px;height:1px;background:currentColor;transform:scaleX(0);transform-origin:right;transition:transform .35s}
+.menu a.u:hover::after{transform:scaleX(1);transform-origin:left}
+.cta{display:inline-flex;align-items:center;gap:10px;height:44px;padding:0 20px;border:1px solid currentColor;font-size:15px;font-weight:500;transition:background .3s,color .3s,border-color .3s}
+.cta:hover{background:var(--yel);border-color:var(--yel);color:var(--blk)}
+.cta.fill{background:var(--blk);color:var(--bone);border-color:var(--blk)}
+.cta.fill:hover{background:var(--yel);color:var(--blk);border-color:var(--yel)}
+/* hero */
+.hero{position:relative;height:100vh;min-height:640px;max-height:1000px;color:#fff;overflow:hidden;background:#6f6d68}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 35%;transform:scale(1.04);animation:settle 2.2s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes settle{to{transform:scale(1)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.38) 0%,rgba(0,0,0,0) 26%,rgba(0,0,0,0) 48%,rgba(0,0,0,.62) 100%)}
+.hero .g{position:absolute;left:0;right:0;bottom:48px;z-index:2;align-items:end;row-gap:28px}
+.hero h1{grid-column:1/9;font-size:clamp(48px,7.4vw,118px);line-height:.94;letter-spacing:-.05em;font-weight:500}
+.hero h1 span{color:var(--yel)}
+.hero .side{grid-column:9/13;font-size:16px;max-width:360px;justify-self:end}
+.hero .side p{margin-bottom:22px;color:#EEEAE2}
+.hero .meta{grid-column:1/13;display:flex;justify-content:space-between;border-top:1px solid rgba(255,255,255,.35);padding-top:16px;color:#E4E0D8}
+/* studio */
+section{padding:130px 0}
+.lab{grid-column:1/4;position:sticky;top:110px;align-self:start;color:var(--grey)}
+.lab b{color:var(--blk);font-weight:400}
+.manifesto{grid-column:4/12;font-size:clamp(26px,3vw,44px);line-height:1.18;letter-spacing:-.03em;font-weight:400}
+.manifesto em{font-style:normal;background:linear-gradient(transparent 62%,var(--yel) 62%)}
+.founder{grid-column:4/12;margin-top:56px;display:flex;gap:60px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:24px}
+.founder div{min-width:180px}
+.founder .m{color:var(--grey);display:block;margin-bottom:6px}
+/* disciplines */
+.disc{background:var(--conc)}
+.disc h2,.h2{grid-column:1/8;font-size:clamp(34px,4.2vw,64px);line-height:1;letter-spacing:-.045em;font-weight:500;margin-bottom:70px}
+.disc .note{grid-column:9/13;align-self:end;margin-bottom:74px;color:var(--grey)}
+.dl{grid-column:1/13;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}
+.di{padding:30px 28px 42px 0;border-bottom:1px solid var(--line);position:relative}
+.di:not(:nth-child(3n+1)){padding-left:28px;border-left:1px solid var(--line)}
+.di .m{color:var(--grey)}
+.di h3{font-size:26px;font-weight:500;letter-spacing:-.025em;margin:34px 0 10px}
+.di p{color:var(--grey);font-size:15.5px;max-width:300px}
+.di::before{content:"";position:absolute;top:30px;right:28px;width:10px;height:10px;background:var(--blk);transition:background .3s,transform .3s}
+.di:hover::before{background:var(--yel);transform:rotate(45deg)}
+/* work */
+.work .head{grid-column:1/13;display:flex;justify-content:space-between;align-items:end;margin-bottom:56px;gap:30px}
+.work .head .h2{margin:0}
+.wk{display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;row-gap:90px;padding:0 40px}
+.p{position:relative}
+.p .ph{overflow:hidden;background:var(--conc)}
+.p img{width:100%;height:100%;object-fit:cover;transition:transform 1.1s cubic-bezier(.2,.7,.2,1)}
+.p:hover img{transform:scale(1.035)}
+.p .cap{display:flex;justify-content:space-between;gap:16px;padding-top:16px;border-top:1px solid var(--line);margin-top:16px}
+.p h3{font-size:21px;font-weight:500;letter-spacing:-.02em}
+.p .cap .m{color:var(--grey);text-align:right;white-space:nowrap}
+.p .words{color:var(--grey);font-size:15px;margin-top:4px}
+.p1{grid-column:1/8}.p1 .ph{aspect-ratio:4/3}
+.p2{grid-column:9/13;margin-top:180px}.p2 .ph{aspect-ratio:3/4}
+.p3{grid-column:2/6}.p3 .ph{aspect-ratio:4/5}
+.p4{grid-column:7/13;margin-top:120px}.p4 .ph{aspect-ratio:3/2}
+.p5{grid-column:1/6}.p5 .ph{aspect-ratio:3/4}
+.p6{grid-column:7/12;margin-top:-60px}.p6 .ph{aspect-ratio:4/3}
+.disc-note{font-size:12px;color:var(--grey);padding:40px 40px 0}
+/* process */
+.proc{background:var(--blk);color:var(--bone)}
+.proc .h2{grid-column:1/9;color:var(--bone)}
+.steps{grid-column:1/13;display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.st{border-top:1px solid rgba(241,238,232,.25);padding-top:22px}
+.st .m{color:var(--yel)}
+.st h3{font-size:30px;font-weight:500;letter-spacing:-.03em;margin:46px 0 12px}
+.st p{color:#B9B5AD;font-size:15.5px}
+/* reviews */
+.rev .lab{position:static}
+.qs{grid-column:4/13;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.qq{background:#fff;padding:32px 28px 28px;display:flex;flex-direction:column;justify-content:space-between;min-height:320px;transition:transform .4s,box-shadow .4s}
+.qq:hover{transform:translateY(-4px);box-shadow:0 30px 50px -36px rgba(0,0,0,.5)}
+.qq .mk{font-size:64px;line-height:.6;color:var(--yel);font-weight:600;height:30px}
+.qq p{font-size:18px;line-height:1.45;letter-spacing:-.01em;margin:10px 0 26px}
+.qq .m{color:var(--grey)}
+.qs{grid-row:1/3}
+.score{grid-column:1/4;grid-row:2;align-self:end}
+.score b{display:block;font-size:96px;font-weight:500;letter-spacing:-.06em;line-height:1}
+.score span{color:var(--grey)}
+/* contact */
+.contact{background:var(--conc);padding-bottom:0}
+.contact .h2{grid-column:1/9;font-size:clamp(44px,6.4vw,104px);margin-bottom:56px}
+.contact .info{grid-column:1/13;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;border-top:1px solid var(--line);padding:26px 0 0}
+.contact .info .m{color:var(--grey);display:block;margin-bottom:8px}
+.contact .info a{border-bottom:1px solid var(--blk)}
+.contact .info a:hover{background:var(--yel)}
+.contact .acts{grid-column:1/13;display:flex;gap:12px;margin:46px 0 90px;flex-wrap:wrap}
+.word{font-size:clamp(70px,17.5vw,300px);font-weight:600;letter-spacing:-.075em;line-height:.78;padding:0 30px;white-space:nowrap;overflow:hidden;color:var(--blk)}
+.word span{color:var(--yel)}
+footer{background:var(--conc);padding:28px 40px 34px;display:flex;justify-content:space-between;gap:20px;color:var(--grey);flex-wrap:wrap}
+/* floating */
+.fab{position:fixed;right:24px;bottom:24px;z-index:45;display:flex;gap:10px;opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .35s,transform .35s}
+.fab.show{opacity:1;transform:none;pointer-events:auto}
+.fab a{height:50px;padding:0 18px;display:flex;align-items:center;gap:8px;font-size:14.5px;font-weight:500;box-shadow:0 14px 30px -14px rgba(0,0,0,.6);transition:transform .25s}
+.fab a:hover{transform:translateY(-2px)}
+.fab .wa{background:#1FAF55;color:#fff}.fab .call{background:var(--blk);color:#fff}
+.fab svg{width:18px;height:18px;fill:#fff}
+/* reveal */
+.js .rv{opacity:0;transform:translateY(28px);transition:opacity 1s cubic-bezier(.2,.7,.2,1),transform 1s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .rv{opacity:1;transform:none;transition:none}.hero img{animation:none;transform:none}*{transition:none!important}}
+@media (max-width:1100px){
+ .tag{display:none}.brand{grid-column:1/7}.menu{grid-column:7/13}
+ .menu a.u{display:none}
+ .hero h1{grid-column:1/13}.hero .side{grid-column:1/13;justify-self:start}
+ .lab{grid-column:1/13;position:static;margin-bottom:30px}
+ .manifesto,.founder{grid-column:1/13}
+ .disc h2,.h2{grid-column:1/13;margin-bottom:30px}.disc .note{grid-column:1/13;margin-bottom:50px}
+ .dl{grid-template-columns:1fr 1fr}
+ .di:not(:nth-child(3n+1)){padding-left:0;border-left:0}
+ .di:nth-child(even){padding-left:24px;border-left:1px solid var(--line)}
+ .steps{grid-template-columns:1fr 1fr;row-gap:50px}
+ .qs{grid-column:1/13;grid-row:auto}.score{grid-column:1/13;grid-row:auto;margin:0 0 40px}
+ .contact .info{grid-template-columns:1fr 1fr;row-gap:30px}
+ .p1{grid-column:1/13}.p2{grid-column:1/8;margin-top:0}.p3{grid-column:6/13;margin-top:-40px}.p4{grid-column:1/13;margin-top:0}.p5{grid-column:1/7}.p6{grid-column:7/13;margin-top:120px}
+}
+@media (max-width:700px){
+ body{font-size:16px;padding-bottom:74px}
+ .g,.wk{padding:0 20px;column-gap:14px}
+ header.top .g{height:62px}
+ .menu .cta{display:none}
+ .hero{height:88vh;min-height:560px}
+ .hero::after{background:linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,.05) 22%,rgba(0,0,0,.35) 45%,rgba(0,0,0,.78) 100%)}
+ .fab{opacity:1;transform:none;pointer-events:auto}
+ .hero .g{bottom:28px}
+ .hero .meta{flex-direction:column;gap:4px}
+ section{padding:84px 0}
+ .dl{grid-template-columns:1fr}
+ .di:nth-child(even){padding-left:0;border-left:0}
+ .di h3{margin-top:22px}
+ .steps{grid-template-columns:1fr}
+ .st h3{margin-top:22px}
+ .qs{grid-template-columns:1fr}
+ .qq{min-height:0}
+ .wk{row-gap:56px}
+ .p1,.p2,.p3,.p4,.p5,.p6{grid-column:1/13;margin-top:0}
+ .p .cap{flex-direction:column;gap:4px}.p .cap .m{text-align:left}
+ .contact .info{grid-template-columns:1fr}
+ .contact .acts .cta{flex:1 1 100%;justify-content:center}
+ .word{padding:0 14px}
+ footer{padding:24px 20px 30px}
+ .fab{left:0;right:0;bottom:0;gap:0;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(241,238,232,.96);backdrop-filter:blur(10px);border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;column-gap:10px}
+ .fab a{justify-content:center;box-shadow:none;height:48px}
+}
+</style>
+</head>
+<body>
+<header class="top" id="top"><div class="g">
+ <a class="brand" href="#"><span class="sq"></span>Design One Studio</a>
+ <span class="tag m">Architects &amp; Designers · Chandigarh</span>
+ <nav class="menu"><a class="u" href="#studio">Studio</a><a class="u" href="#work">Work</a><a class="u" href="#process">Process</a><a class="u" href="#contact">Contact</a><a class="cta" href="#contact">Start a project</a></nav>
+</div></header>
+
+<section class="hero" style="padding:0">
+ <img src="img/hero.jpg" alt="Sculpted concrete facade with deep window reveals, in the spirit of Chandigarh modernism" width="2000" height="1499">
+ <div class="g">
+  <h1>Form, space<br>&amp; the <span>unbuilt.</span></h1>
+  <div class="side"><p>An architecture and interior design studio in Manimajra, shaping homes, clinics, resorts and villages across the Tricity with creativity and technical precision.</p><a class="cta" href="#work">See selected work →</a></div>
+  <div class="meta m"><span>30.7096° N, 76.8413° E</span><span>SCO 839 · NAC Manimajra · Chandigarh</span><span>Est. by Ar. Vijay Karan Singh</span></div>
+ </div>
+</section>
+
+<section id="studio"><div class="g">
+ <div class="lab m rv"><b>(01)</b> Studio</div>
+ <p class="manifesto rv">ONE is the harmony between creation and creator, <em>the built and the unbuilt</em>, form and space, aesthetics and experience. We blend art with craft and discipline with freedom to design environments that are more equitable, sustainable and enriching to live in.</p>
+ <div class="founder rv">
+  <div><span class="m">Founder &amp; Principal Architect</span>Ar. Vijay Karan Singh</div>
+  <div><span class="m">Practice</span>Architecture · Interiors · Planning</div>
+  <div><span class="m">Google rating</span>4.9 from 51 reviews</div>
+ </div>
+</div></section>
+
+<section class="disc"><div class="g">
+ <h2 class="rv">Six disciplines, one studio.</h2>
+ <p class="note rv">From a single washroom to a whole village plan, every scale gets the same attention to detail.</p>
+ <div class="dl">
+  <div class="di rv"><span class="m">01</span><h3>Architecture</h3><p>Residences, commercial buildings and hospitality, from concept to approved drawings.</p></div>
+  <div class="di rv"><span class="m">02</span><h3>Interiors</h3><p>Homes, offices and clinics designed down to the last joinery detail.</p></div>
+  <div class="di rv"><span class="m">03</span><h3>Urban planning</h3><p>Spatial planning for sustainable villages and growing neighbourhoods.</p></div>
+  <div class="di rv"><span class="m">04</span><h3>Landscape</h3><p>Gardens, courtyards and outdoor rooms that bring nature indoors.</p></div>
+  <div class="di rv"><span class="m">05</span><h3>Vastu consultancy</h3><p>Vastu principles woven into modern plans without compromising design.</p></div>
+  <div class="di rv"><span class="m">06</span><h3>Modular kitchens</h3><p>Functional, made-to-measure kitchens planned around how you cook.</p></div>
+ </div>
+</div></section>
+
+<section class="work" id="work">
+ <div class="g"><div class="head rv"><h2 class="h2">Selected work</h2><span class="m">(02) Projects · 2024–2026</span></div></div>
+ <div class="wk">
+  <article class="p p1 rv"><div class="ph"><img src="img/interior.jpg" alt="Double-height concrete interior with soft daylight" loading="lazy"></div><div class="cap"><div><h3>Concrete &amp; light residence</h3><p class="words">Raw surfaces, deep overhangs, calm rooms.</p></div><span class="m">Residential · Tricity</span></div></article>
+  <article class="p p2 rv"><div class="ph"><img src="img/bath.jpg" alt="Bright washroom with round mirror and timber shelves" loading="lazy" style="object-position:30% center"></div><div class="cap"><div><h3>Resort washroom</h3><p class="words">Tranquility. Nature. Elegance.</p></div><span class="m">Hospitality · Chandigarh</span></div></article>
+  <article class="p p3 rv"><div class="ph"><img src="img/hall.jpg" alt="Warm, light-filled corridor with glass partitions" loading="lazy"></div><div class="cap"><div><h3>Healing clinic interior</h3><p class="words">Bright. Inviting. Warm. Thoughtful.</p></div><span class="m">Healthcare</span></div></article>
+  <article class="p p4 rv"><div class="ph"><img src="img/light.jpg" alt="Sunlight falling across board-formed concrete walls" loading="lazy"></div><div class="cap"><div><h3>Courtyard light study</h3><p class="words">Designing with the Punjab sun, not against it.</p></div><span class="m">Concept</span></div></article>
+  <article class="p p5 rv"><div class="ph"><img src="img/jali.jpg" alt="Brick jali screen beside a concrete volume and trees" loading="lazy"></div><div class="cap"><div><h3>Brick jali house</h3><p class="words">Breathable facades for hot summers.</p></div><span class="m">Residential</span></div></article>
+  <article class="p p6 rv"><div class="ph"><img src="img/step.jpg" alt="Geometric stepwell pattern" loading="lazy"></div><div class="cap"><div><h3>Sustainable villages</h3><p class="words">Spatial plans for Haryana Gram Panchayats.</p></div><span class="m">Planning · Haryana</span></div></article>
+ </div>
+ <p class="disc-note m">Imagery is representative for this concept; your own project photography goes here.</p>
+</section>
+
+<section class="proc" id="process"><div class="g">
+ <h2 class="h2 rv">How a project moves.</h2>
+ <div class="steps">
+  <div class="st rv"><span class="m">Phase 01</span><h3>Listen</h3><p>We take time to understand what you're looking for: how you live, work and dream.</p></div>
+  <div class="st rv"><span class="m">Phase 02</span><h3>Concept</h3><p>Plans, 3D views and material ideas, refined together until it feels right.</p></div>
+  <div class="st rv"><span class="m">Phase 03</span><h3>Detail</h3><p>Drawings, Vastu, approvals and specifications, precise enough to build from.</p></div>
+  <div class="st rv"><span class="m">Phase 04</span><h3>Deliver</h3><p>Site coordination and timely handover, with clear communication throughout.</p></div>
+ </div>
+</div></section>
+
+<section class="rev"><div class="g">
+ <div class="lab m rv"><b>(03)</b> Clients</div>
+ <div class="qs">
+  <figure class="qq rv"><div><div class="mk">“</div><p>They brought my ideas to life in a way that exceeded my expectations. Professional, easy to communicate with.</p></div><figcaption class="m">Google review · Dec 2024</figcaption></figure>
+  <figure class="qq rv"><div><div class="mk">“</div><p>Their designs are elegant, functional, and thoughtfully detailed. Professionals who truly understand modern living.</p></div><figcaption class="m">City Hardware · Jul 2025</figcaption></figure>
+  <figure class="qq rv"><div><div class="mk">“</div><p>Creative and functional designs for both homes and offices. Attentive to detail, and always meets deadlines.</p></div><figcaption class="m">Google review · Nov 2024</figcaption></figure>
+ </div>
+ <div class="score rv"><b>4.9</b><span class="m">Average from 51 Google reviews</span></div>
+</div></section>
+
+<section class="contact" id="contact">
+ <div class="g">
+  <h2 class="h2 rv">Let's design something that lasts.</h2>
+  <div class="info rv">
+   <div><span class="m">Studio</span>First Floor, SCO 839<br>NAC Manimajra, Chandigarh 160101</div>
+   <div><span class="m">Call</span><a href="tel:+918837549658">+91 88375 49658</a></div>
+   <div><span class="m">Write</span><a href="mailto:design1studio.chd@gmail.com">design1studio.chd@gmail.com</a></div>
+   <div><span class="m">Find us</span><a href="https://maps.google.com/?q=Design+One+Studio+SCO+839+Manimajra+Chandigarh" target="_blank" rel="noopener">Open in Google Maps</a></div>
+  </div>
+  <div class="acts rv"><a class="cta fill" href="https://wa.me/918837549658?text=Hi%2C%20I%27d%20like%20to%20discuss%20a%20project">Start a project on WhatsApp →</a><a class="cta" href="mailto:design1studio.chd@gmail.com">Email the studio</a></div>
+ </div>
+ <div class="word" aria-hidden="true">Design One<span>.</span></div>
+</section>
+<footer class="m"><span>© Design One Studio · Architects &amp; Designers</span><span>Demo website concept by Zykken</span></footer>
+
+<div class="fab"><a class="call" href="tel:+918837549658"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.2 11.4 11.4 0 0 0 3.6.6 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .6 3.6 1 1 0 0 1-.3 1z"/></svg>Call</a><a class="wa" href="https://wa.me/918837549658"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>WhatsApp</a></div>
+<script>
+document.documentElement.classList.add('js');
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1,rootMargin:'0px 0px -30px 0px'});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+const h=document.getElementById('top');const f=()=>h.classList.toggle('solid',scrollY>innerHeight*.7);const fb=document.querySelector('.fab');const f2=()=>{f();fb.classList.toggle('show',scrollY>innerHeight*.6)};addEventListener('scroll',f2,{passive:true});f2();
+</script>
+</body>
+</html>
